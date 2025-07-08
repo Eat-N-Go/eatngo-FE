@@ -1,0 +1,7 @@
+export const ORDER_STATUS = {
+  CREATED: "CREATED",
+  READY: "READY",
+  CONFIRMED: "CONFIRMED",
+  CANCELED: "CANCELED",
+  DONE: "DONE",
+} as const;
