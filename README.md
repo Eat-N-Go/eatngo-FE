@@ -49,6 +49,7 @@ pnpm --filter o2o-user test:coverage    # User 앱 테스트 커버리지
 pnpm --filter o2o-owner test:coverage   # Owner 앱 테스트 커버리지
 ```
 
+
 ## CI/CD 워크플로우
 
 이 프로젝트는 앱별로 독립적인 GitHub Actions 워크플로우를 사용합니다:
