@@ -46,7 +46,7 @@ export const useStoreList = () => {
       return getStoreList(queryParams.toString());
     },
     getNextPageParam: (lastPage) => {
-      return lastPage.success && lastPage.data.contents.length > 0
+      return lastPage.success && lastPage.data?.contents?.length > 0
         ? lastPage.data.lastId
         : undefined;
     },
