@@ -27,7 +27,10 @@ const StoreListContainer = () => {
     return <ErrorUi message={error?.message} />;
   }
 
-  const list = stores?.pages.flatMap((page) => (page.success ? page.data.contents : [])) || [];
+  const list =
+    stores?.pages.flatMap((page) =>
+      page.success && page.data?.contents ? page.data.contents : [],
+    ) || [];
 
   return (
     <div className={style.container}>
